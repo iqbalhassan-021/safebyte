@@ -1,38 +1,493 @@
-.App {
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+  height: auto;
+  width: 100%;
+}
+.flex-center-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.body-cover{
+  height: auto;
+  max-width: 1400px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navBar{
+  height: auto;
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: white;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+.bars{
+  display: none;
+}
+.tab{
+  height: 100%;
+  width: auto;
+
+}
+
+.no-decoration{
+  color: black;
+  text-decoration: none;
+}
+.logo{
+  height: 50px;
+}
+
+.nav-button{
+  height: 100%;
+  width: auto;
+  padding: 0px 10px 0px 10px;
+  border-bottom: 1px solid white;
+  transition: 0.3s ease;
+}
+.nav-button:hover{
+  border-bottom: 1px solid #0077B5;
+}
+
+.primary-button{
+  background-color: black;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: none;
+  outline: none;
+}
+.linkedin{
+  background-color: #0077B5;
+}
+.primary-button i{
+  margin-right: 10px;
+}
+.hero-section{
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  min-height: 600px;
+
+
+}
+
+.hero-text{
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+
+}
+
+.headline{
+  font-size: 48px;
+}
+.subheading{
+  font-size: 24px;
+}
+.hero-image{
+  height: auto;
+  width: 50%;
+}
+.heroimage{
+  width: 90%;
+}
+
+.section{
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  min-height: 400px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.grid-2x{
+  height: 100%;
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+
+}
+.grid-3x{
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+
+}
+.section-image-holder{
+  height: 100%;
+  width: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+}
+.section-image{
+  max-width: 350px;
+}
+.tab-image{
+  height: auto;
+  max-width: 320px;
+}
+.flex-center-colum{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-3x > .tab p{
+  color: black;
   text-align: center;
 }
+.how-to-use{
+  height: auto;
+  width: 100%;
+  min-height: 600px;
+  padding: 20px;
+}
+.blogs{
+  height: auto;
+  width: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact{
+  height: auto;
+  width: 100%;
+  min-height: 500px;
+  background-color: #0072bb;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer{
+  height: auto;
+  width: 100%;
+  min-height: 400px;
+  background-color: #044c79;
+  padding: 50px 20px 20px 20px;
+  color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+.vectorside{
+  min-height: 400px;
+  width: 50%;
   color: white;
 }
+.vectorside img{
+  height: auto;
+  max-width: 350px;
+}
+.contactside{
+  min-height: 400px;
+  width: 50%;
+  color: white;
+}
+.contact-form{
+  height: auto;
+  width: 100%;
+  background-color: white;
+  min-height: 400px;
+  padding: 20px;
+}
+.contact-form form{
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-.App-link {
-  color: #61dafb;
+
+}
+.tab input{
+  height: 30px;
+  width: 350px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.message{
+  height: auto;
+  width: 350px;
+  resize: vertical;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.grid-4x{
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+.blog-image-small{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about{
+  height: auto;
+  width: auto;
+  max-width: 780px;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+
+  padding: 20px;
+}
+.blogs-section{
+  height: auto;
+  width: auto;
+  max-width: 780px;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+
+  padding: 20px;
+}
+.blog-image{
+  width: 100%;
+}
+.main-part{
+  height: auto;
+  width: auto;
+  max-width: 780px;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+
+  padding: 20px;
+}
+.tab-button{
+  height: 70px;
+  width: 50%;
+
+  outline:none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 36px;
+  border-bottom: 4px solid silver;
+  transition: 0.3s ease;
+}
+.tab-button:hover{
+  border-bottom: 4px solid #0072bb;
+}
+.decryption,.encryption{
+  height: auto;
+  width: 100%;
+  max-width: 780px;
+
+}
+.enc{
+  width: 100%;
+  max-width: 780px;
+  resize: vertical;
+  padding: 20px;
+  margin-top: 10px;
+}
+.tab > .key{
+  height: 50px;
+  margin-top: 0px;
+}
+.decryption{
+  display: none;
+}
+.pages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.temp{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.backgrond{
+  width: 100%;
+  height: 200px;
+  background-image: url('/public/assets/images/background.jpg');
+  background-position: center;
+  background-size: contain;
+}
+@media only screen and  (max-width: 1050px){
+
+  .grid-2x{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .grid-3x{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+  }
+  .grid-4x{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+  }
+}
+@media only screen and  (max-width: 840px){
+  .navBar{
+      display: flex;
+      flex-direction: column;
+  }
+  .logo-holder{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .pages{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      justify-content: left;
+      align-items: flex-start;
+      position: absolute;
+      top: 70px;
+      padding: 20px;
+      display: none;
+  }
+  .nav-button{
+      width: 100%;
+      height: 50px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .linkedin{
+      display: none;
+  }
+  .bars{
+    display: flex;
+  }
+}
+
+@media only screen and  (max-width: 760px){
+  .hero-section{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .hero-text{
+      width: 100%;
+      height: auto;
+  }
+  .hero-image{
+      width: 100%;
+      height: auto;
+  }
+  .section{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .grid-2x{
+      width: 100%;
+      padding: 0px;
+  }
+  .section-image-holder{
+      width: 100%;
+  }
+  .wrapper{
+      display: flex;
+      flex-direction: column;
+  }
+  .vectorside{
+      width: 100%;
+  }
+  .contactside{
+      width: 100%;
+  }
+  .heroimage{
+      max-width: 500px;
+  }
+}
+@media only screen and  (max-width: 690px){
+  .grid-3x{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 10px;
+  }
+}
+@media only screen and  (max-width: 590px){
+  .grid-4x{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 10px;
+  }
+  .tab-button{
+      font-size: 16px;
+  }
+  .temp{
+      display: flex;
+      flex-direction: column;
+  }
+  .temp input{
+      width: 100%;
   }
 }
