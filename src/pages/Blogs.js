@@ -23,7 +23,7 @@ const Blogs = () => {
   return (
     <>
       <Navbar />
-      <Ads />
+      <Ads></Ads>
       <div className="container">
         <div className="body-cover">
           <div className="blogs-section">
@@ -33,19 +33,13 @@ const Blogs = () => {
                   <img src={blog.blogImage} alt={blog.blogTitle} className="blog-image" />
                   <h3>{blog.blogTitle}</h3>
                 </div>
-                <div 
-                style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}
-                >
-                    <p>
-                        Ads here
-                    </p>
-                </div>
+
               </Link>
             ))}
           </div>
         </div>
       </div>
-      <Ads />
+      <Ads></Ads>
       <Footer />
     </>
   );

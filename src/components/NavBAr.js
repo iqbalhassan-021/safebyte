@@ -52,7 +52,7 @@ function Navbar() {
                 <p>ENCRYPT</p>
               </div>
             </Link>
-            <a href="https://github.com/iqbalhassan-021/safebyte.git" target='_blank' className="no-decoration" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/iqbalhassan-021/safebyte.git" target='_blank' className="no-decoration"  rel="noopener noreferrer">
               <div className="nav-button">
                 <p>GITHUB</p>
               </div>
@@ -60,7 +60,7 @@ function Navbar() {
           </div>
 
           <div className="tab">
-            <a href="https://www.linkedin.com/in/iqbal-hassan-b156b5314/" target='_blank' className="no-decoration" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/iqbal-hassan-b156b5314/" target='_blank' className="no-decoration"  rel="noopener noreferrer">
               <div className="primary-button linkedin">
                 <i className="fa-brands fa-linkedin"></i>
                 <p>Let's Connect</p>

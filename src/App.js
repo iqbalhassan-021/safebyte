@@ -7,6 +7,8 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Blogs from './pages/Blogs';
 import BlogDetail from './pages/BlogDetail';
+import errorpage from './pages/404';
+
 function App() {
   return (
     <Router>
@@ -17,6 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog/:name" element={<BlogDetail />} /> 
+        <Route path='*' element={<Home/>}/>
       </Routes>
     </Router>
   );

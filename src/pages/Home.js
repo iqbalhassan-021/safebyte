@@ -14,7 +14,7 @@ function Home(props) {
         <Hero></Hero>
         <Reasones></Reasones>
         <How></How>
-        <Ads></Ads>
+        <Ads/>
         <RecentBlogs></RecentBlogs>
         <ContactComponent></ContactComponent>
         <Footer></Footer>
