@@ -14,7 +14,8 @@ function ContactComponent(props) {
                     </div>
                     <div className="contactside flex-center-colum">
                         <div className="contact-form flex-center-colum">
-                            <form >
+                            <form action="https://api.web3forms.com/submit" method="POST" >
+                            <input type="hidden" name="access_key" value="96dfec8b-2442-41ef-b291-a01b5f495183"/>
                                 <div className="tab" style={{color:'black',display:'flex',flexDirection:'column'}}>
                                     <label for="name">Name</label>
                                     <input type="text" id="name" name="name" required placeholder="name"/>

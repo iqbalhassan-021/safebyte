@@ -47,7 +47,12 @@ function Navbar() {
                 <p>BLOGS</p>
               </div>
             </Link>
-            <a href="https://github.com/yourusername" className="no-decoration" target="_blank" rel="noopener noreferrer">
+            <Link to="/encrypt" className="no-decoration">
+              <div className="nav-button">
+                <p>ENCRYPT</p>
+              </div>
+            </Link>
+            <a href="https://github.com/iqbalhassan-021/safebyte.git" target='_blank' className="no-decoration" target="_blank" rel="noopener noreferrer">
               <div className="nav-button">
                 <p>GITHUB</p>
               </div>
@@ -55,7 +60,7 @@ function Navbar() {
           </div>
 
           <div className="tab">
-            <a href="https://www.linkedin.com/in/yourprofile" className="no-decoration" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/iqbal-hassan-b156b5314/" target='_blank' className="no-decoration" target="_blank" rel="noopener noreferrer">
               <div className="primary-button linkedin">
                 <i className="fa-brands fa-linkedin"></i>
                 <p>Let's Connect</p>

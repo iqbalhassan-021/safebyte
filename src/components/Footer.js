@@ -36,20 +36,25 @@ function Footer() {
                 Blogs
               </Link>
               <br />
-              <a href="#" className="no-decoration" style={{ color: 'white' }}>
+              <Link to='/encrypt' className="no-decoration" style={{ color: 'white' }}>
+                encrypt
+              </Link>
+              <br />
+              <a href="https://github.com/iqbalhassan-021/safebyte.git" className="no-decoration" style={{ color: 'white' }}>
                 GitHub Repo
               </a>
             </div>
+
             <div className="tab">
               <p>
                 <strong>Developer</strong>
               </p>
               <br />
-              <a href="#" className="no-decoration" style={{ color: 'white' }}>
+              <a href="https://www.linkedin.com/in/iqbal-hassan-b156b5314/" target='_blank' className="no-decoration" style={{ color: 'white' }}>
                 Linkedin
               </a>
               <br />
-              <a href="#" className="no-decoration" style={{ color: 'white' }}>
+              <a href="https://hassansbio.netlify.app/" target='_blank' className="no-decoration" style={{ color: 'white' }}>
                 Official Site
               </a>
             </div>
@@ -59,7 +64,8 @@ function Footer() {
               </p>
               <br />
               <div className="news-letter">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST" >
+                <input type="hidden" name="access_key" value="96dfec8b-2442-41ef-b291-a01b5f495183"/>
                   <input type="email" name="email" placeholder="Enter your email" />
                   <button type="submit" className="primary-button" style={{ borderRadius: '0px' }}>
                     Submit

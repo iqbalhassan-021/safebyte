@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Hero(props) {
     return (
@@ -16,15 +17,13 @@ function Hero(props) {
 
                </p>
                <br/>
-               <a href="#" className="no-decoration">
-                   <div className="primary-button ">
-                     
-                       <p>
-                           Get Started
-                       </p>
-                   </div>
-               </a>
+               <Link to="/encrypt" className="no-decoration">
+              <div className="primary-button">
+                <p>Get Started</p>
+              </div>
+            </Link>
            </div>
+
 
            <div className="hero-image flex-center-row">
                <img className="heroimage" src="/assets/images/Dataextraction-rafiki.png" alt="hero image"/>
